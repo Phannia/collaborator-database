@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import React from 'react'
+import Listado from './components/Listado'
+import Formulario from './components/Formulario'
 
-import './App.css'
-
-function App() {
-
+const App = () => {
   return (
-    <>
-      
-    </>
+    <main className='row'>
+        <section className='container '>
+            <Listado />
+        </section>
+        
+        <section className='container'>
+            <Formulario />
+        </section>
+        
+    </main>
   )
 }
 
