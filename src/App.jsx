@@ -7,6 +7,8 @@ import { BaseColaboradores } from './assets/JS/BaseColaboradores.js'
 
 const App = () => {
   const [ListaColaboradores, setListaColaboradores] = useState(BaseColaboradores);
+
+
   return (
     <main className='row'>
         <section className='container'>
@@ -19,6 +21,7 @@ const App = () => {
             <Formulario 
             ListaColaboradores={ListaColaboradores} 
             setListaColaboradores={setListaColaboradores}
+            
             />
         </section>
         
