@@ -12,7 +12,6 @@ const Listado = (props) => {
                 <th>edad</th>
                 <th>Cargo</th>
                 <th>Teléfono</th>
-                <th>Eliminar registro</th>
             </tr>
         </thead>
         <tbody>
@@ -24,7 +23,6 @@ const Listado = (props) => {
                         <td>{colaborador.edad}</td>
                         <td>{colaborador.cargo}</td>
                         <td>{colaborador.telefono}</td>
-                        <td></td>
                     </tr>
                 )
             }
