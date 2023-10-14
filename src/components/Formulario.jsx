@@ -36,6 +36,7 @@ const Formulario = (props) => {
                 "cargo": cargo,
                 "telefono": telefono
             });
+            //se añade nuevo colaborador
             props.setListaColaboradores([...props.ListaColaboradores])
             console.log(props.ListaColaboradores);
             return;
@@ -49,7 +50,7 @@ const Formulario = (props) => {
             Agregar Colaborador
         </h3>
         <form className="formulario" onSubmit={enviarFormulario}>
-            {error ? <p>Todos los campos son obligatorios</p> : null}
+            
             <div className="form-group container py-1">
                 <input 
                 type="text" 
@@ -118,10 +119,10 @@ const Formulario = (props) => {
                     Agregar colaborador
                 </button>
             </div>
+            {/* {error ? <Alert message={message} /> : null} */}
         </form>
-        
     </Fragment>
-  )
+    )
 }
 
 export default Formulario
